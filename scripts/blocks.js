@@ -1,5 +1,8 @@
+let block = 8
+
 Blocks.duo.size = 3
-Blocks.duo.reload = 5
+Blocks.duo.reload = 20
+Blocks.duo.range = block*16
 Blocks.duo.ammo(
 	Items.copper,
 	extend(BasicBulletType, {
@@ -7,7 +10,7 @@ Blocks.duo.ammo(
 		height: 10,
 		speed: 7,
 		damage: 20,
-		lifetime: 9 * Blocks.duo.range
+		lifetime: 30
 	}),
 	Items.lead,
 	extend(BasicBulletType, {
@@ -16,6 +19,6 @@ Blocks.duo.ammo(
 		speed: 9,
 		damage: 22,
 		reloadMultiplier: 2.5,
-		lifetime: 9 * Blocks.duo.range
+		lifetime: 30
 	})
 )
