@@ -1,16 +1,21 @@
-print('Loading spinner...')
+const test = extendContent(Wall, "test", {
+	health: 200,
+	buildVisibility: BuildVisibility.shown,
+	requirements: ItemStack.with(
+		Items.copper, 1000
+	),
+	category: Category.defense
+});
 
-const SpinBlock = extend(Block, {
-    update: function(tile){
-        tile.rotation(tile.rotation() + 1)
-    }
-})
-const spinner = new SpinBlock("spinner")
-spinner.update = true
-spinner.localizedName = "Spinner"
-spinner.description = "it spin"
-spinner.rotate = true
-spinner.category = Category.turret
-spinner.buildVisibility = BuildVisibility.shown
+const test2 = extendContent(Wall, "test2", {});
+test2.health = 200;
+buildVisibility = BuildVisibility.shown;
+test2.requirements = ItemStack.with(
+	Items.copper, 1000
+);
+test2.category = Category.defense;
 
-print("Created spinner block.") 
+module.exports = {
+	test = test,
+	test2 = test2
+}
