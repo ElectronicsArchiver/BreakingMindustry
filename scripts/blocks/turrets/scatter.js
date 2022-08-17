@@ -27,8 +27,6 @@ Blocks.scatter.ammo(
 		height: block+0.5,
 		reloadMultiplier: 1.5,
 		collidesGround: true,
-		frontColor: Items.lead.color,
-		backColor: Items.lead.color,
 		speed: 7.45,
 		damage: 12,
 		lifetime: Blocks.scatter.range/this.speed
