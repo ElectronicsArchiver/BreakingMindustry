@@ -41,7 +41,7 @@ Blocks.scatter.ammo(
 		fragBullets: 6,
 		speed: 7.45,
 		damage: 12,
-		lifetime: Blocks.scatter.range/this.speed
+		lifetime: Blocks.scatter.range/this.speed,
 		fragBullet: extend(BasicBulletType, {
 	 	 	width: 5,
 			height: 12,
@@ -65,5 +65,5 @@ Blocks.scatter.ammo(
 		reloadMultiplier: 1.2,
 		homingPower: 1,
 		homingRange: Blocks.scatter.range
-	}),
+	})
 );
