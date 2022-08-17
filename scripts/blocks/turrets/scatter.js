@@ -17,7 +17,7 @@ Blocks.scatter.ammo(
 		collidesGround: true,
 		speed: 7,
 		damage: 6,
-		lifetime: Blocks.scatter.range/this.speed
+		lifetime: 75
 	}),
 	Items.lead,
 	extend(FlakBulletType, {
@@ -27,7 +27,7 @@ Blocks.scatter.ammo(
 		collidesGround: true,
 		speed: 7.45,
 		damage: 12,
-		lifetime: Blocks.scatter.range/this.speed
+		lifetime: 70
 	}),
 	Items.metaglass,
 	extend(FlakBulletType, {
@@ -37,7 +37,7 @@ Blocks.scatter.ammo(
 		fragBullets: 6,
 		speed: 7.45,
 		damage: 12,
-		lifetime: Blocks.scatter.range/this.speed,
+		lifetime: 70,
 		fragBullet: extend(BasicBulletType, {
 	 	 	width: 5,
 			height: 12,
@@ -59,7 +59,7 @@ Blocks.scatter.ammo(
 		backColor: Pal.darkerMetal,
 		reloadMultiplier: 1.2,
 		homingPower: 1,
-		lifetime: Blocks.scatter.range/this.speed,
+		lifetime: 85,
 		homingRange: Blocks.scatter.range
 	})
 );
