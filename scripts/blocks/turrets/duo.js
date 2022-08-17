@@ -16,7 +16,7 @@ Blocks.duo.ammo(
 		height: 9,
 		speed: 7,
 		damage: 20,
-		lifetime: Blocks.scatter.range/this.speed
+		lifetime: Blocks.duo.range/this.speed
 	}),
 	Items.lead,
 	extend(BasicBulletType, {
@@ -25,7 +25,7 @@ Blocks.duo.ammo(
 		speed: 9,
 		damage: 22,
 		reloadMultiplier: 2.5,
-		lifetime: 45
+		lifetime: Blocks.duo.range/this.speed
 	}),
 	Items.graphite,
 	extend(BasicBulletType, {
@@ -34,7 +34,7 @@ Blocks.duo.ammo(
 		speed: 6,
 		damage: 28,
 		reloadMultiplier: 0.6,
-		lifetime: 65.75
+		lifetime: Blocks.duo.range/this.speed
 	}),
 	Items.silicon,
 	extend(BasicBulletType, {
@@ -43,7 +43,7 @@ Blocks.duo.ammo(
 		speed: 9,
 		damage: 25,
 		reloadMultiplier: 1.35,
-		lifetime: 30,
+		lifetime: Blocks.duo.range/this.speed,
 		homingRange: block*17,
 		homingPower: 45
 	})
