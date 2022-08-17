@@ -3,7 +3,6 @@ let block = 8;
 /* block start */
 
 // turret start
-
 Blocks.duo.size = 4;
 Blocks.duo.category = Category.production;
 Blocks.duo.reload = 20;
@@ -65,5 +64,57 @@ Blocks.scatter.shoot.shootDelay = 0;
 Blocks.scatter.shoot.shots = 1;
 Blocks.scatter.requirements = ItemStack.with(Items.copper, 272, Items.lead, 295, Items.graphite, 164);
 Blocks.scatter.ammo(
-// todo
+	Items.scrap,
+	extend(FlakBulletType, {
+		width: block-0.75,
+		height: block-0.75,
+		collidesGround: true,
+		speed: 7,
+		damage: 6,
+		lifetime: Blocks.scatter.range/this.speed
+	}),
+	Items.lead,
+	extend(FlakBulletType, {
+		width: block+0.5,
+		height: block+0.5,
+		reloadMultiplier: 1.5,
+		collidesGround: true,
+		frontColor: Items.lead.color,
+		backColor: Items.lead.color,
+		speed: 7.45,
+		damage: 12,
+		lifetime: Blocks.scatter.range/this.speed
+	}),
+	Items.metaglass,
+	extend(FlakBulletType, {
+		width: block+1.25,
+		height: block+1.25,
+		collidesGround: true,
+		fragBullets: 6,
+		speed: 7.45,
+		damage: 12,
+		lifetime: Blocks.scatter.range/this.speed
+		fragBullet: extend(BasicBulletType, {
+	 	 	width: 5,
+			height: 12,
+			shrinkY: 1,
+			lifetime: 20,
+			collidesGround: true,
+			backColor: Pal.gray,
+	 	 	frontColor: Color.white,
+		 	despawnEffect: Fx.none,
+	 	 	collidesGround: true
+		})
+	}),
+	Items.silicon,
+	extend(FlakBulletType, {
+		width: block,
+		height: block,
+		speed: 6.8,
+		damage: 17,
+		reloadMultiplier: 1.2,
+		homingPower: 1,
+		homingRange: Blocks.scatter.range
+	}),
 );
+// turret end
