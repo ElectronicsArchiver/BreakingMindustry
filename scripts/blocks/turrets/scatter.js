@@ -64,6 +64,7 @@ Blocks.scatter.ammo(
 		backColor: Pal.darkerMetal,
 		reloadMultiplier: 1.2,
 		homingPower: 1,
+		lifetime: Blocks.scatter.range/this.speed,
 		homingRange: Blocks.scatter.range
 	})
 );
