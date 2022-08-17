@@ -8,8 +8,6 @@ Blocks.scatter.recoil = 2.5;
 Blocks.scatter.shootY = 0;
 Blocks.scatter.inaccuracy = 5;
 Blocks.scatter.targetGround = true;
-Blocks.scatter.shoot.shootDelay = 0;
-Blocks.scatter.shoot.shots = 1;
 Blocks.scatter.requirements = ItemStack.with(Items.copper, 272, Items.lead, 295, Items.graphite, 164);
 Blocks.scatter.ammo(
 	Items.scrap,
