@@ -1,10 +1,10 @@
-let block = 8
+let block = 8;
 
-Blocks.duo.size = 2
-Blocks.duo.reload = 20
-Blocks.duo.range = block*17
-Blocks.duo.category = Category.production // ah yes, production turret
-Blocks.duo.requirements = ItemStack.with(Items.copper, 55, Items.lead, 30)
+Blocks.duo.size = 2;
+Blocks.duo.reload = 20;
+Blocks.duo.range = block*17;
+Blocks.duo.category = Category.production; // ah yes, production turret
+Blocks.duo.requirements = ItemStack.with(Items.copper, 55, Items.lead, 30);
 Blocks.duo.ammo(
 	Items.copper,
 	extend(BasicBulletType, {
@@ -42,5 +42,5 @@ Blocks.duo.ammo(
 		lifetime: 30,
 		homingRange = block*17,
 		homingPower = 0.6
-	}),
-)
+	})
+);
