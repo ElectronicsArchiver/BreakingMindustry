@@ -24,13 +24,13 @@ const test3 = extend(Wall, "test3", {
 	category: Category.defense
 });
 
-const test4 = extendContent(Wall, "test4", {});
+const test4 = extend(Wall, "test4", {});
 test4.health = 200;
 test4.buildVisibility = BuildVisibility.shown;
 test4.requirements = ItemStack.with(
 	Items.copper, 1000
 );
-test2.category = Category.defense;
+test4.category = Category.defense;
 
 module.exports = {
 	test: test,
