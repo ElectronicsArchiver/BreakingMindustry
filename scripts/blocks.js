@@ -1,8 +1,9 @@
 let block = 8
 
-Blocks.duo.size = 3
+Blocks.duo.size = 2
 Blocks.duo.reload = 20
-Blocks.duo.range = block*16
+Blocks.duo.range = block*17
+Blocks.duo.requirements = ItemStack.with(Items.copper, 55, Items.lead, 30)
 Blocks.duo.ammo(
 	Items.copper,
 	extend(BasicBulletType, {
