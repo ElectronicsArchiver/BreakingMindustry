@@ -48,8 +48,7 @@ Blocks.scatter.ammo(
 			collidesGround: true,
 			backColor: Pal.gray,
 	 	 	frontColor: Color.white,
-		 	despawnEffect: Fx.none,
-	 	 	collidesGround: true
+		 	despawnEffect: Fx.none
 		})
 	}),
 	Items.silicon,
