@@ -1,11 +1,12 @@
 let block = 8;
 
-Blocks.duo.size = 2;
+Blocks.duo.size = 4;
 Blocks.duo.reload = 20;
-Blocks.duo.range = block*17;
+Blocks.duo.range = block*25;
+Blocks.duo.recoil = 2.5;
 Blocks.duo.shootY = 1;
 Blocks.duo.inaccuracy = 0;
-Blocks.duo.requirements = ItemStack.with(Items.copper, 55, Items.lead, 30);
+Blocks.duo.requirements = ItemStack.with(Items.copper, 375, Items.lead, 220, Items.graphite, 264);
 Blocks.duo.ammo(
 	Items.copper,
 	extend(BasicBulletType, {
@@ -13,7 +14,7 @@ Blocks.duo.ammo(
 		height: 9,
 		speed: 7,
 		damage: 20,
-		lifetime: 30
+		lifetime: 45
 	}),
 	Items.lead,
 	extend(BasicBulletType, {
@@ -22,7 +23,7 @@ Blocks.duo.ammo(
 		speed: 9,
 		damage: 22,
 		reloadMultiplier: 2.5,
-		lifetime: 30
+		lifetime: 45
 	}),
 	Items.graphite,
 	extend(BasicBulletType, {
@@ -31,7 +32,7 @@ Blocks.duo.ammo(
 		speed: 6,
 		damage: 28,
 		reloadMultiplier: 0.6,
-		lifetime: 37.5
+		lifetime: 65.75
 	}),
 	Items.silicon,
 	extend(BasicBulletType, {
@@ -42,6 +43,6 @@ Blocks.duo.ammo(
 		reloadMultiplier: 1.35,
 		lifetime: 30,
 		homingRange: block*17,
-		homingPower: 0.6
+		homingPower: 45
 	})
 );
