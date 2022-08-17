@@ -40,7 +40,7 @@ Blocks.duo.ammo(
 		damage: 25,
 		reloadMultiplier: 1.35,
 		lifetime: 30,
-		homingRange = block*17,
-		homingPower = 0.6
+		homingRange: block*17,
+		homingPower: 0.6
 	})
 );
