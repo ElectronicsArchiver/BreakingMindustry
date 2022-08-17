@@ -3,7 +3,8 @@ let block = 8;
 Blocks.duo.size = 2;
 Blocks.duo.reload = 20;
 Blocks.duo.range = block*17;
-Blocks.duo.category = Category.production; // ah yes, production turret
+Blocks.duo.shootY = 1;
+Blocks.duo.inaccuracy = 0;
 Blocks.duo.requirements = ItemStack.with(Items.copper, 55, Items.lead, 30);
 Blocks.duo.ammo(
 	Items.copper,
