@@ -16,7 +16,7 @@ Blocks.duo.ammo(
 		height: 9,
 		speed: 7,
 		damage: 20,
-		lifetime: 45
+		lifetime: Blocks.scatter.range/this.speed
 	}),
 	Items.lead,
 	extend(BasicBulletType, {
