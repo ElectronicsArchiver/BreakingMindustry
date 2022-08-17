@@ -112,6 +112,8 @@ Blocks.scatter.ammo(
 		height: block,
 		speed: 6.8,
 		damage: 17,
+		frontColor: Pal.darkishGray,
+		backColor: Pal.darkerMetal,
 		reloadMultiplier: 1.2,
 		homingPower: 1,
 		homingRange: Blocks.scatter.range
