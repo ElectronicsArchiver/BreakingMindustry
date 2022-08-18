@@ -12,6 +12,6 @@ l();
 l();
 
 function l(){
-	require("turrets/" + names[counter]);
+	require("blocks/turrets/" + names[counter]);
 	counter++;
 }
