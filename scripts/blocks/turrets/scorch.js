@@ -2,10 +2,11 @@ let block = 8;
 
 Blocks.scorch.size = 4;
 Blocks.scorch.category = Category.production;
-Blocks.scorch.reload = 12.5;
+Blocks.scorch.reload = 6.75;
 Blocks.scorch.range = block*22;
 Blocks.scorch.inaccuracy = 0;
 Blocks.scorch.targetAir = true;
+Blocks.scorch.rotateSpeed = 5;
 Blocks.scorch.requirements = ItemStack.with(Items.copper, 188, Items.lead, 142, Items.silicon, 50);
 Blocks.scorch.ammo(
 	Items.coal,
