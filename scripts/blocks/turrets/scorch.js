@@ -7,6 +7,7 @@ Blocks.scorch.range = block*22;
 Blocks.scorch.inaccuracy = 0;
 Blocks.scorch.targetAir = true;
 Blocks.scorch.rotateSpeed = 5;
+Blocks.scorch.recoil = 1.5;
 Blocks.scorch.requirements = ItemStack.with(Items.copper, 188, Items.lead, 142, Items.silicon, 50);
 Blocks.scorch.ammo(
 	Items.coal,
