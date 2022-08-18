@@ -15,7 +15,7 @@ Blocks.scorch.ammo(
 		speed: 9,
 		damage: 17*2.25,
 		ammoMultiplier: 3,
-		hitSize: 7,
+		hitSize: 16,
 		lifetime: 45,
 		pierce: true,
 		collidesAir: true,
@@ -30,6 +30,7 @@ Blocks.scorch.ammo(
 	Items.pyratite,
 	extend(BulletType, {
 		speed: 4,
+		hitSize: 16,
 		damage: 60*3.125,
 		ammoMultiplier: 6,
 		lifetime: 45,
