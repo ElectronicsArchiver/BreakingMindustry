@@ -2,8 +2,8 @@ let block = 8;
 
 Blocks.scorch.size = 4;
 Blocks.scorch.category = Category.production;
-Blocks.scorch.reload = 6.75;
-Blocks.scorch.range = block*22;
+Blocks.scorch.reload = 4.5;
+//Blocks.scorch.range = block*22;
 Blocks.scorch.inaccuracy = 0;
 Blocks.scorch.targetAir = true;
 Blocks.scorch.rotateSpeed = 5;
@@ -15,8 +15,8 @@ Blocks.scorch.ammo(
 		speed: 9,
 		damage: 17/2*2.25,
 		ammoMultiplier: 3,
-		hitSize: 16,
-		drawSize: 16*1.5,
+		//hitSize: 16,
+		//drawSize: 16*1.5,
 		lifetime: 80,
 		pierce: true,
 		collidesAir: true,
@@ -31,8 +31,8 @@ Blocks.scorch.ammo(
 	Items.pyratite,
 	extend(BulletType, {
 		speed: 4,
-		hitSize: 16,
-		drawSize: 16*1.5,
+		//hitSize: 16,
+		//drawSize: 16*1.5,
 		damage: 60/3*3.125,
 		ammoMultiplier: 6,
 		lifetime: 80,
