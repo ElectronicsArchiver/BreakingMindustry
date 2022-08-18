@@ -16,6 +16,7 @@ Blocks.scorch.ammo(
 		damage: 17/2*2.25,
 		ammoMultiplier: 3,
 		hitSize: 16,
+		drawSize: 16*1.5,
 		lifetime: 80,
 		pierce: true,
 		collidesAir: true,
@@ -31,6 +32,7 @@ Blocks.scorch.ammo(
 	extend(BulletType, {
 		speed: 4,
 		hitSize: 16,
+		drawSize: 16*1.5,
 		damage: 60/3*3.125,
 		ammoMultiplier: 6,
 		lifetime: 80,
