@@ -1,17 +1,17 @@
 // turret
 let counter = 0;
-const names = 
+const turrets = 
 	["duo", "scatter", "scorch", "hail", "wave", 
 	"lancer", "arc", "parallax", "swarmer",
 	"salvo", "segment", "tsunami", "fuse",
 	"ripple", "cyclone", "foreshadow", "spectre",
 	"meltdown"];
 
-l();
-l();
-l();
+tur();
+tur();
+tur();
 
-function l(){
-	require("blocks/turrets/" + names[counter]);
+function tur(){
+	require("blocks/turrets/" + turrets[counter]);
 	counter++;
 }
