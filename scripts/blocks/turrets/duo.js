@@ -2,10 +2,13 @@
 
 (() => {
     
+    const { basicBullet } = require('Bullet');
+    
+    
     const block = 8;
     
     
-    const copperBullet = bullet({
+    const copperBullet = basicBullet({
         lifetime : 55 ,
         damage : 20 ,
         height : 9 ,
@@ -13,7 +16,7 @@
         speed : 7
     })
     
-    const leadBullet = bullet({
+    const leadBullet = basicBullet({
         reloadMultiplier : 2.5 ,
         lifetime : 40 ,
         damage : 22 ,
@@ -22,7 +25,7 @@
         speed : 9
     })
     
-    const graphiteBullet = bullet({
+    const graphiteBullet = basicBullet({
         reloadMultiplier : 0.6 ,
         lifetime : 75 ,
         damage : 28 ,
@@ -31,7 +34,7 @@
         speed : 6
     })
     
-    const siliconBullet = bullet({
+    const siliconBullet = basicBullet({
         reloadMultiplier : 1.35 ,
         homingRange : block * 17 ,
         homingPower : 45 ,
@@ -68,10 +71,5 @@
     	Items.graphite , graphiteBullet ,
     	Items.silicon  , siliconBullet
     );
-    
-    
-    function bullet(options){
-        return extend(BasicBulletType,options);
-    }
     
 })();

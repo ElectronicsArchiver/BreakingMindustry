@@ -1,4 +1,7 @@
 (() => {
+    
+    const { basicBullet } = require('Bullet');
+    
 
     let block = 8;
 
@@ -14,7 +17,7 @@
     turret.requirements = ItemStack.with(Items.copper,1);
     
     
-    const copperBullet = bullet({
+    const copperBullet = basicBullet({
         lifetime : 80 ,
         height : 8.5 ,
         damage : 12 ,
@@ -25,10 +28,5 @@
     turret.ammo(
     	Items.copper , copperBullet
     );
-    
-    
-    function bullet(options){
-        return extend(BasicBulletType,options);
-    }
     
 })();

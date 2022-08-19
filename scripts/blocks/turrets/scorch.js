@@ -1,6 +1,9 @@
 
 (() => {
     
+    const { rawBullet } = require('Bullet');    
+    
+    
     let block = 8;
     
     
@@ -22,7 +25,7 @@
     turret.size = 4;
     
     
-    const coalBullet = bullet({
+    const coalBullet = rawBullet({
         statusDuration : 60 * 8 ,
         ammoMultiplier : 3 ,
         despawnEffect : Fx.none ,
@@ -38,7 +41,7 @@
         speed : 9
     })
     
-    const pyratiteBullet = bullet({
+    const pyratiteBullet = rawBullet({
         statusDuration : 60 * 17 ,
         ammoMultiplier : 6 ,
         despawnEffect : Fx.none ,
@@ -57,10 +60,5 @@
     	Items.coal     , coalBullet     ,
     	Items.pyratite , pyratiteBullet
     );
-
-
-    function bullet(options){
-        return extend(BulletType,options);
-    }
     
 })();

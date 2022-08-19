@@ -1,6 +1,8 @@
 
 (() => {
     
+    const { flakBullet , basicBullet } = require('Bullet');
+    
     
     let block = 8;
     
@@ -86,14 +88,5 @@
     	Items.metaglass    , metaBullet    ,
     	Items.silicon      , siliconBullet
     )
-        
     
-    function flakBullet(options){
-        return extend(FlakBulletType,options);
-    }
-    
-    function basicBullet(options){
-        return extend(BasicBulletType,options);
-    }
-        
 })();
