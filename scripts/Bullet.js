@@ -1,12 +1,12 @@
 
 module.exports = {
     
-    flakBullet : (options) =>
+    flak : (options) =>
         extend(FlakBulletType,options) ,
         
-    basicBullet : (options) =>
+    basic : (options) =>
         extend(BasicBulletType,options) ,
         
-    rawBullet : (options) =>
+    raw : (options) =>
         extend(BulletType,options)
 }
