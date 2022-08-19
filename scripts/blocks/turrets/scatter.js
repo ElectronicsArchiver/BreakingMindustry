@@ -55,7 +55,7 @@
         width : 5
     })
     
-    const metaglass = flakBullet({
+    const metaBullet = flakBullet({
         collidesGround : true ,
         fragBullets : 6 ,
         fragBullet : fragBullet ,

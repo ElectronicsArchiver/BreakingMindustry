@@ -54,7 +54,7 @@
     })
     
     turret.ammo(
-    	Items.coal     , coalBullet
+    	Items.coal     , coalBullet     ,
     	Items.pyratite , pyratiteBullet
     );
 
