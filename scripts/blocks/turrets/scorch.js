@@ -23,34 +23,34 @@
     
     
     const coalBullet = bullet({
-        speed: 9,
-        damage: 17/2*2.25,
-        ammoMultiplier: 3,
-        lifetime: 80,
-        pierce: true,
-        collidesAir: true,
-        statusDuration: 60 * 8,
-        shootEffect: Fx.shootSmallFlame,
-        hitEffect: Fx.hitFlameSmall,
-        despawnEffect: Fx.none,
-        status: StatusEffects.burning,
-        keepVelocity: false,
-        hittable: false
+        statusDuration : 60 * 8 ,
+        ammoMultiplier : 3 ,
+        despawnEffect : Fx.none ,
+        keepVelocity : false ,
+        shootEffect : Fx.shootSmallFlame ,
+        collidesAir : true ,
+        hitEffect : Fx.hitFlameSmall ,
+        hittable : false ,
+        lifetime : 80 ,
+        status : StatusEffects.burning ,
+        damage : 17 / 2 * 2.25 ,
+        pierce : true ,
+        speed : 9
     })
     
     const pyratiteBullet = bullet({
-        speed: 4,
-        damage: 60/3*3.125,
-        ammoMultiplier: 6,
-        lifetime: 80,
-        pierce: true,
-        collidesAir: true,
-        statusDuration: 60 * 17,
-        shootEffect: Fx.shootPyraFlame,
-        hitEffect: Fx.hitFlameSmall,
-        despawnEffect: Fx.none,
-        status: StatusEffects.burning,
-        hittable: false
+        statusDuration : 60 * 17 ,
+        ammoMultiplier : 6 ,
+        despawnEffect : Fx.none ,
+        shootEffect : Fx.shootPyraFlame ,
+        collidesAir : true ,
+        hitEffect : Fx.hitFlameSmall ,
+        hittable : false ,
+        lifetime : 80 ,
+        status : StatusEffects.burning ,
+        damage : 60 / 3 * 3.125 ,
+        pierce : true ,
+        speed : 4
     })
     
     turret.ammo(
