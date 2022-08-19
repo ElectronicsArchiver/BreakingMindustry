@@ -1,35 +1,25 @@
+(() => {   
+	let block = 8;
 
-(() => {
+	const t = Blocks.;
+	t.inaccuracy = 5;
+	t.category = Category.production;
+	t.reload = 12.5;
+	t.range = block * 1;
+	t.size = 4;
+	t.requirements = ItemStack.with(Items.copper,1); 
+	const copperBullet = bul(BasicBulletType, {
+		width : 8.5 ,
+		height : 8.5 ,
+		damage : 12 ,
+	 	lifetime : 80 ,
+		speed : 8
+	});
     
-    let block = 8;
-
-    const turret = Blocks.;
-
-    turret.targetGround = true;
-    turret.inaccuracy = 5;
-    turret.category = Category.production;
-    turret.reload = 12.5;
-    turret.range = block * 28;
-    turret.size = 4;
-
-    turret.requirements = ItemStack.with(Items.copper,1);
-    
-    
-    const copperBullet = bullet({
-        lifetime : 80 ,
-        height : 8.5 ,
-        damage : 12 ,
-        width : 8.5 ,
-        speed : 8
-    })
-    
-    turret.ammo(
-    	Items.copper , copperBullet
-    );
-    
-    
-    function bullet(options){
-        return extend(BasicBulletType,options);
-    }
-    
+	t.ammo(
+	 	Items.copper , copperBullet
+	);
+	function bul(type, options){
+	 	return extend(type, options);
+	}  
 })();
