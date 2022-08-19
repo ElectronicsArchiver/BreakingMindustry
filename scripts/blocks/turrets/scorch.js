@@ -33,7 +33,7 @@
         hittable : false ,
         lifetime : 80 ,
         status : StatusEffects.burning ,
-        damage : 17 / 2 * 2.25 ,
+        damage : 19.15 ,
         pierce : true ,
         speed : 9
     })
@@ -48,7 +48,7 @@
         hittable : false ,
         lifetime : 80 ,
         status : StatusEffects.burning ,
-        damage : 60 / 3 * 3.125 ,
+        damage : 62.5 ,
         pierce : true ,
         speed : 4
     })
