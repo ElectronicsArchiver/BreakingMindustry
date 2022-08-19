@@ -1,1 +1,2 @@
-require("blocks/list");
+
+require('blocks/list');
