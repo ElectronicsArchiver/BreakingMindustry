@@ -1,50 +1,77 @@
-let block = 8;
 
-Blocks.duo.size = 4;
-Blocks.duo.category = Category.production;
-Blocks.duo.reload = 20;
-Blocks.duo.range = block*25;
-Blocks.duo.recoil = 2.5;
-Blocks.duo.shootY = 1;
-Blocks.duo.inaccuracy = 0;
-Blocks.duo.shoot.shots = 1;
-Blocks.duo.requirements = ItemStack.with(Items.copper, 375, Items.lead, 220, Items.graphite, 264);
-Blocks.duo.ammo(
-	Items.copper,
-	extend(BasicBulletType, {
-		width: 9,
-		height: 9,
-		speed: 7,
-		damage: 20,
-		lifetime: 55
-	}),
-	Items.lead,
-	extend(BasicBulletType, {
-		width: 6,
-		height: 7,
-		speed: 9,
-		damage: 22,
-		reloadMultiplier: 2.5,
-		lifetime: 40
-	}),
-	Items.graphite,
-	extend(BasicBulletType, {
-		width: 9,
-		height: 9,
-		speed: 6,
-		damage: 28,
-		reloadMultiplier: 0.6,
-		lifetime: 75
-	}),
-	Items.silicon,
-	extend(BasicBulletType, {
-		width: 9,
-		height: 9,
-		speed: 9,
-		damage: 25,
-		reloadMultiplier: 1.35,
-		lifetime: 40,
-		homingRange: block*17,
-		homingPower: 45
-	})
-);
+
+(() => {
+    
+    const block = 8;
+    
+    
+    const copperBullet = bullet({
+        lifetime : 55 ,
+        damage : 20 ,
+        height : 9 ,
+        width : 9 ,
+        speed : 7
+    })
+    
+    const leadBullet = bullet({
+        reloadMultiplier : 2.5 ,
+        lifetime : 40 ,
+        damage : 22 ,
+        height : 7 ,
+        width : 6 ,
+        speed : 9
+    })
+    
+    const graphiteBullet = bullet({
+        reloadMultiplier : 0.6 ,
+        lifetime : 75 ,
+        damage : 28 ,
+        height : 9 ,
+        width : 9 ,
+        speed : 6
+    })
+    
+    const siliconBullet = bullet({
+        reloadMultiplier : 1.35 ,
+        homingRange : block * 17 ,
+        homingPower : 45 ,
+        lifetime : 40 ,
+        damage : 25 ,
+        height : 9 ,
+        speed : 9 ,
+        width : 9
+    })
+    
+    const requirements = ItemStack.with(
+        Items.copper   , 375 ,
+        Items.lead     , 220 ,
+        Items.graphite , 264
+    );
+    
+    
+    
+    const turret = Blocks.duo;
+    
+    turret.requirements = requirements;
+    turret.inaccuracy = 0;
+    turret.category = Category.production;
+    turret.reload = 20;
+    turret.recoil = 2.5;
+    turret.shootY = 1;
+    turret.shoot.shots = 1;
+    turret.range = block * 25;
+    turret.size = 4;
+    
+    turret.ammo(
+    	Items.copper   , copperBullet   ,
+    	Items.lead     , leadBullet     ,
+    	Items.graphite , graphiteBullet ,
+    	Items.silicon  , siliconBullet
+    );
+    
+    
+    function bullet(options){
+        return extend(BasicBulletType,options);
+    }
+    
+})();

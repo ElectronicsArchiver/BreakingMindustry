@@ -1,17 +1,17 @@
-// turret
-let counter = 0;
-const turrets = 
-	["duo", "scatter", "scorch", "hail", "wave", 
-	"lancer", "arc", "parallax", "swarmer",
-	"salvo", "segment", "tsunami", "fuse",
-	"ripple", "cyclone", "foreshadow", "spectre",
-	"meltdown"];
 
-tur();
-tur();
-tur();
+(() => {
+    
+    const turrets = [
+    	'duo' ,	'scatter' , 'scorch' ,
+    	// 'hail' , 'wave' , 'lancer' ,
+    	// 'arc' , 'parallax' , 'swarmer' ,
+    	// 'salvo' , 'segment' , 'tsunami' ,
+    	// 'fuse' , 'ripple' , 'cyclone' ,
+    	// 'foreshadow' , 'spectre' , 'meltdown'
+    ]
 
-function tur(){
-	require("blocks/turrets/" + turrets[counter]);
-	counter++;
-}
+
+    for(let turret of turrets)
+        require('blocks/turrets/' + turret);
+
+})();
