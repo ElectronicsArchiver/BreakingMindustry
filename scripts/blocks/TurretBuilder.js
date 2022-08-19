@@ -8,7 +8,7 @@ module.exports = function(data){
     
     let { turret , ammo } = data;
     
-    turret.requirements = ItemStack.with.apply(data.recipe);
+    turret.requirements = ItemStack.with.apply([],data.recipe);
     turret.category = data.category;
     
     
@@ -31,5 +31,5 @@ module.exports = function(data){
         bullets[material] = Bullets[type](bullet);
     });
     
-    turret.ammo(bullets);
+    turret.ammo.apply(turret,bullets);
 }
