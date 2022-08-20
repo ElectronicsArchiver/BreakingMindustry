@@ -26,11 +26,11 @@ module.exports = {
     
     ammo : [{
         material : Items.copper ,
-        lifetime : 55 ,
+        lifetime : 80 ,
         damage : 20 ,
         height : 9 ,
         width : 9 ,
-        speed : 7 ,
+        speed : 5 ,
         type : 'basic'
     }]
 }
