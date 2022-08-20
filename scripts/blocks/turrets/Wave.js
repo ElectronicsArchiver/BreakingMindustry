@@ -3,17 +3,15 @@ const block = 8;
 
 
 module.exports = {
-    
-    turret : Blocks.duo ,
+    turret : Blocks.wave ,
     category : Category.production ,
 
     specs : {
         inaccuracy : 0 ,
         reload : 20 ,
         recoil : 2.5 ,
-        shootY : 1 ,
-        range : block * 25 ,
-        size : 3
+        range : block * 17 ,
+        size : 4 
     },
     
     shoot : { 
@@ -21,7 +19,7 @@ module.exports = {
     },
         
     recipe : [
-        Items.copper, 1 ,
+        Items.graphite , 264 ,
     ],
     
     ammo : [{
