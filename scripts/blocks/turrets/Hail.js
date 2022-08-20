@@ -9,11 +9,11 @@ module.exports = {
     category : Category.production ,
 
     specs : {
-        targetGround : true ,
-        inaccuracy : 5 ,
+        inaccuracy : 12 , // don't ask
         reload : 75.35 ,
         range : block * 35 ,
-        size : 4
+        size : 4,
+        recoil: 1.5,
     },
         
     recipe : [ 
