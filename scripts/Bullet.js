@@ -1,6 +1,9 @@
 
 module.exports = {
     
+    artillery : (options) =>
+        extend(ArtilleryBulletType,options) ,
+    
     flak : (options) =>
         extend(FlakBulletType,options) ,
         
