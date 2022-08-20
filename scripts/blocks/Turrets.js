@@ -5,7 +5,7 @@
 
     const turrets = [
         'Duo' , 'Scatter' , 'Scorch' ,
-        'Hail' //, 'Wave' , 'Lancer' ,
+        'Hail' , 'Wave' ,// 'Lancer' ,
         // 'Arc' , 'Parallax' , 'Swarmer' ,
         // 'Salvo' , 'Segment' , 'Tsunami' ,
         // 'Fuse' , 'Ripple' , 'Cyclone' ,
