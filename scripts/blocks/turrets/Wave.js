@@ -3,7 +3,7 @@
 // - Drifted Notes
 const block = 8;
 
-const t = wave;
+const t = Blocks.wave;
 t.category = Category.production;
 t.requirements = ItemStack.with(
     Items.metaglass, 65, Items.lead, 160, Items.copper, 125
