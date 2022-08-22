@@ -25,7 +25,6 @@ module.exports = {
     ],
     
     ammo : [{
-        material : Items.coal ,
         statusDuration : 60 * 8 ,
         ammoMultiplier : 3 ,
         despawnEffect : Fx.none ,
@@ -33,6 +32,7 @@ module.exports = {
         shootEffect : Fx.shootSmallFlame ,
         collidesAir : true ,
         hitEffect : Fx.hitFlameSmall ,
+        material : Items.coal ,
         hittable : false ,
         lifetime : 80 ,
         status : StatusEffects.burning ,
@@ -41,13 +41,13 @@ module.exports = {
         speed : 9 ,
         type : 'raw'
     },{
-        material : Items.pyratite ,
         statusDuration : 60 * 17 ,
         ammoMultiplier : 6 ,
         despawnEffect : Fx.none ,
         shootEffect : Fx.shootPyraFlame ,
         collidesAir : true ,
         hitEffect : Fx.hitFlameSmall ,
+        material : Items.pyratite ,
         hittable : false ,
         lifetime : 80 ,
         status : StatusEffects.burning ,

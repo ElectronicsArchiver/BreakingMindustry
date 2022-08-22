@@ -35,8 +35,8 @@ module.exports = {
         speed : 7 ,
         type : 'basic'
     },{
-        material : Items.lead ,
         reloadMultiplier : 2.5 ,
+        material : Items.lead ,
         lifetime : 40 ,
         damage : 22 ,
         height : 7 ,
@@ -44,8 +44,8 @@ module.exports = {
         speed : 9 ,
         type : 'basic'
     },{
-        material : Items.graphite ,
         reloadMultiplier : 0.6 ,
+        material : Items.graphite ,
         lifetime : 75 ,
         damage : 28 ,
         height : 9 ,
@@ -53,10 +53,10 @@ module.exports = {
         speed : 6 ,
         type : 'basic'
     },{
-        material : Items.silicon ,
         reloadMultiplier : 1.35 ,
         homingRange : block * 17 ,
         homingPower : 45 ,
+        material : Items.silicon ,
         lifetime : 40 ,
         damage : 25 ,
         height : 9 ,

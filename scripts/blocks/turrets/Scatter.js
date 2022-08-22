@@ -42,8 +42,8 @@
         ],
         
         ammo : [{
-            material : Items.scrap ,
             collidesGround : true ,
+            material : Items.scrap ,
             lifetime : 75 ,
             height : block - 0.75 ,
             damage : 6,
@@ -51,9 +51,9 @@
             speed : 7 ,
             type : 'flak'
         },{
-            material : Items.lead ,
             reloadMultiplier : 1.5 ,
             collidesGround : true ,
+            material : Items.lead ,
             lifetime : 70 ,
             height : block + 0.5 ,
             damage : 12 ,
@@ -61,10 +61,10 @@
             speed : 7.45 ,
             type : 'flak'
         },{
-            material : Items.metaglass ,
             collidesGround : true ,
             fragBullets : 6 ,
             fragBullet : fragBullet ,
+            material : Items.metaglass ,
             lifetime : 70 ,
             height : block + 1.25 ,
             damage : 12 ,
@@ -72,12 +72,12 @@
             speed : 7.45 ,
             type : 'flak'
         },{
-            material : Items.silicon ,
             reloadMultiplier : 1.2 ,
             homingRange : range ,
             homingPower : 1 ,
             frontColor : Pal.darkishGray ,
             backColor : Pal.darkerMetal ,
+            material : Items.silicon ,
             lifetime : 85 ,
             height : block ,
             damage : 17 ,
